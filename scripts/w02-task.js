@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     yearElement.textContent = currentYear;
     
     if(imageElement) { 
-        imageElement.setAttribute('src', imageElement); 
+        imageElement.setAttribute('src', profilePicture); 
         imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
     } else {
