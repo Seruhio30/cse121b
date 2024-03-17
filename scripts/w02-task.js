@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let fullName = 'Sergio Herrera Rivera';
     let currentYear = '2024';
-    let profilePicture = 'images/sergio.jpeg';
+    let profilePicture = 'images\sergio.jpeg';
 
     const nameElement = document.getElementById('name');
     const foodElement = document.getElementById('food');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
     } else {
-        console.error("No se encontró el elemento con ID 'profilePicture'.");
+        console.error("No se encontró el elemento con ID profilePicture.");
     }
     
     var myFavoriteFood = ['Pasta', 'Ice-cream', 'Japanese food', 'Pizza', 'Gallo Pinto', 'Tamales'];
