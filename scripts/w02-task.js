@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let fullName = 'Sergio Herrera Rivera';
     let currentYear = '2024';
-    let profilePicture = 'images/sergio.jpeg';
+    let profilePicture = 'images/Sergio.jpeg';
 
     const nameElement = document.getElementById('name');
     const foodElement = document.getElementById('food');
