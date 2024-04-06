@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | W06: Final Project Programming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/recetas.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a id="toggleMenu">&equiv;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="w01-task.html">W1 Task</a></li>
+                <li><a href="w03-task.html">W3 Task</a></li>
+                <li><a href="w04-task.html">W4 Task</a></li>
+                <li><a href="w05-task.html">W5 Task</a></li>
+                <li><a href="w06-finalProject.html">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1>Buscador de recetas</h1>
+    </div>
+
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Ingrese la receta">
+        <button onclick="searchRecipes()">Buscar</button>
+    </div>
+       
+    <div class="results" id="results">
+        Resultados
+    </div>
+
+    <footer>&copy;<span id="year"></span> | Week 06 - Final Project CSE121b | CSE 121b</footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/w06-project.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

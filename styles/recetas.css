@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(151, 214, 238);
+}
+
+.container{
+    max-width: 1600px;
+    margin: 50 auto;
+    padding: 20px;
+    background-color: rgb(151, 214, 238);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    font-style: oblique;
+}
+
+.container{
+    margin-top: 50px;
+}
+.container input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+button{
+    margin-left: 40px;
+    background-color: #007bff;
+    padding: 13px 50px;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+
+}
+
+.results{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.recipe {
+    margin-bottom: 20px; 
+    border: 1px solid #181414; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.recipe h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+
+.recipe img {
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.recipe p {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    margin-bottom: 0; 
+}
