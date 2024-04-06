@@ -5,7 +5,7 @@ async function searchRecipes() {
     const query = searchInput.value.trim();
 
     if (query === '') {
-        alert('Por favor, ingresa el nombre de una receta.');
+        alert("Please enter the name of a recipe.");
         return;
     }
 
@@ -14,13 +14,13 @@ async function searchRecipes() {
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            throw new Error('No se pudo obtener la información de la receta.');
+            throw new Error('Failed to retrieve recipe information.');
         }
         const data = await response.json();
         displayRecipes(data.meals);
     } catch (error) {
-        console.error('Error al buscar la receta:', error);
-        alert('Hubo un error al buscar la receta. Por favor, inténtelo de nuevo más tarde.');
+        console.error('Error while searching for the recipe:', error);
+        alert('There was an error while searching for the recipe. Please try again later.');
     }
 }
 
@@ -40,7 +40,7 @@ function displayRecipes(recipes) {
         image.alt = recipe.strMeal;
 
         const ingredients = document.createElement('p');
-        ingredients.textContent = `Ingredientes: ${getIngredients(recipe)}`;
+        ingredients.textContent = `Ingredients: ${getIngredients(recipe)}`;
 
         recipeElement.appendChild(title);
         recipeElement.appendChild(image);
@@ -61,6 +61,8 @@ function getIngredients(recipe) {
             ingredients += `${ingredient}, `;
         }
     }
-    // Eliminar la coma y el espacio al final
+   
     return ingredients.slice(0, -2);
 }
+
+
